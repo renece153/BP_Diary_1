@@ -75,6 +75,5 @@ namespace BP_Diary_1.Controllers
             }
 
         }
-
         }
 }
