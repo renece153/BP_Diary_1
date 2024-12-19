@@ -23,15 +23,15 @@ namespace BP_Diary_1.Controllers
 
 
 		[HttpPost]
-        public IActionResult Index(bp_diary_records bp_diary)
+        public IActionResult Index(bp_diary_records bp_diary_records)
         {
-            this.Context.bp_diary.Add(bp_diary);
+            this.Context.bp_diary_records.Add(bp_diary_records);
             this.Context.SaveChanges();
 
             //Fetch the CustomerId returned via SCOPE IDENTITY.
-            int bp_diary_id = bp_diary.bp_diary_id;
+            int bp_diary_id = bp_diary_records.bp_diary_id;
 
-            return View(bp_diary);
+            return View(bp_diary_records);
         }
 
 	}

@@ -21,13 +21,13 @@
             <th>City</th>
             <th>Country</th>
         </tr>
-        @foreach (bp_diary_records bp_diary in Model)
+        @foreach (bp_diary_records bp_diary_records in Model)
         {
             <tr>
-                <td>@bp_diary.bp_diary_id</td>
-                <td>@bp_diary.date_record</td>
-                <td>@bp_diary.systolic</td>
-                <td>@bp_diary.diastolic</td>
+                <td>@bp_diary_records.bp_diary_id</td>
+                <td>@bp_diary_records.date_record</td>
+                <td>@bp_diary_records.systolic</td>
+                <td>@bp_diary_records.diastolic</td>
             </tr>
         }
     </table>

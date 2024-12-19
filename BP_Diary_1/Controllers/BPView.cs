@@ -17,7 +17,7 @@ namespace BP_Diary_1.Controllers
         {
             List<bp_diary_records> objPriceList;
 
-            objPriceList = _db.bp_diary.ToList();
+            objPriceList = _db.bp_diary_records.ToList();
 
             return View(objPriceList);
         }
